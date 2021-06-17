@@ -737,7 +737,7 @@ header * {
       flex-direction: column;
       align-items: center;
       .videospacer {
-        height: 280px;
+        height: 175px;
         width: 100%;
       }
       .video-headline {
@@ -763,6 +763,63 @@ header * {
         margin-bottom: 50px;
         .uil-play {
           color: white;
+        }
+      }
+    }
+  }
+}
+
+// Numbers Section
+.numbers {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(/img/green_parallax.jpg) center/cover no-repeat fixed;
+  .numbers-container {
+    height: 500px;
+    margin: 0 auto;
+    //height: 90vh;
+    width: 1780px;
+    .number-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .numberspacer {
+        height: 100px;
+        padding: 0;
+        //background-color: #bedf07;
+        width: 100%;
+      }
+      .number-figs {
+        height: 200px;
+        // background-color: blue;
+        margin-top: 60px;
+        // padding: 100px;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .center-flex {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          .count-heading {
+            font-family: var(--poppins);
+            line-height: 1em;
+            position: relative;
+            margin-bottom: 6px;
+            color: white;
+            .count-anim {
+              font-size: 10rem;
+            }
+          }
+          .subheader-count {
+            margin: 0px 0 0;
+            font-size: 24px;
+            color: white;
+          }
         }
       }
     }

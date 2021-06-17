@@ -882,7 +882,7 @@ header * {
 }
 
 .coffee-video .video-container .video-wrapper .videospacer {
-  height: 280px;
+  height: 175px;
   width: 100%;
 }
 
@@ -914,6 +914,83 @@ header * {
 }
 
 .coffee-video .video-container .video-wrapper .video-btn .uil-play {
+  color: white;
+}
+
+.numbers {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(/img/green_parallax.jpg) center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/img/green_parallax.jpg) center/cover no-repeat fixed;
+}
+
+.numbers .numbers-container {
+  height: 500px;
+  margin: 0 auto;
+  width: 1780px;
+}
+
+.numbers .numbers-container .number-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.numbers .numbers-container .number-wrapper .numberspacer {
+  height: 100px;
+  padding: 0;
+  width: 100%;
+}
+
+.numbers .numbers-container .number-wrapper .number-figs {
+  height: 200px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.numbers .numbers-container .number-wrapper .number-figs .center-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.numbers .numbers-container .number-wrapper .number-figs .center-flex .count-heading {
+  font-family: var(--poppins);
+  line-height: 1em;
+  position: relative;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.numbers .numbers-container .number-wrapper .number-figs .center-flex .count-heading .count-anim {
+  font-size: 10rem;
+}
+
+.numbers .numbers-container .number-wrapper .number-figs .center-flex .subheader-count {
+  margin: 0px 0 0;
+  font-size: 24px;
   color: white;
 }
 /*# sourceMappingURL=style.css.map */
