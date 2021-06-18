@@ -1260,7 +1260,7 @@ header * {
   margin-top: 100px;
   height: 35vh;
   color: var(--white);
-  padding: 0 0 0 0;
+  padding: 0;
   padding-bottom: 0px;
   position: relative;
   background-position: 50% 0%;
@@ -1268,17 +1268,51 @@ header * {
 }
 
 .footer .footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   position: relative;
+  margin: 0 auto;
+  max-width: 1780px;
 }
 
 .footer .footer-container .row-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.footer .footer-container .row-center .footer-col {
+  width: 33.33333333%;
+}
+
+.footer .footer-container .row-center .footer-col .footer-logo {
+  float: left;
+}
+
+.footer .footer-container .row-center .footer-col .footer-logo img {
+  max-width: 85px !important;
+}
+
+.footer .footer-copyright {
+  margin-top: 68px;
+  position: relative;
+  color: #ffffff;
+  color: var(--white);
+  text-align: start;
+  padding: 24px 0 20px;
+  overflow: hidden;
+}
+
+.footer .footer-copyright::before {
+  content: "";
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+}
+
+.footer .footer-copyright a {
+  color: var(--main-green);
 }
 /*# sourceMappingURL=style.css.map */

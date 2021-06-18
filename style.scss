@@ -1056,18 +1056,51 @@ header * {
   margin-top: 100px;
   height: 35vh;
   color: var(--white);
-  padding: 0 0 0 0;
+  padding: 0;
   padding-bottom: 0px;
   position: relative;
   background-position: 50% 0%;
   background-repeat: no-repeat;
   .footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     position: relative;
+    margin: 0 auto;
+    max-width: 1780px;
+
     .row-center {
       display: flex;
-      justify-content: center;
+      //justify-content: center;
+      .footer-col {
+        width: 33.33333333%;
+        //background-color: red;
+        .footer-logo {
+          float: left;
+          img {
+            max-width: 85px !important;
+          }
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    margin-top: 68px;
+    position: relative;
+    color: #ffffff;
+    color: var(--white);
+    text-align: start;
+    padding: 24px 0 20px;
+    overflow: hidden;
+    &::before {
+      content: "";
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      position: absolute;
+      top: 0px;
+      left: 0;
+      right: 0;
+    }
+    a {
+      color: var(--main-green);
     }
   }
 }
