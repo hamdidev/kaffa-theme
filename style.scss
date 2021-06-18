@@ -1054,7 +1054,7 @@ header * {
   background-size: cover;
   width: 100%;
   margin-top: 100px;
-  height: 35vh;
+  //height: 35vh;
   color: var(--white);
   padding: 0;
   padding-bottom: 0px;
@@ -1084,23 +1084,29 @@ header * {
     }
   }
   .footer-copyright {
-    margin-top: 68px;
+    margin: 0 auto;
+    max-width: 1780px;
+    margin-top: 100px;
     position: relative;
     color: #ffffff;
     color: var(--white);
     text-align: start;
     padding: 24px 0 20px;
     overflow: hidden;
+    bottom: 0;
     &::before {
       content: "";
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       position: absolute;
-      top: 0px;
+      top: 0;
       left: 0;
       right: 0;
     }
     a {
       color: var(--main-green);
+    }
+    p {
+      font-family: var(--poppins);
     }
   }
 }
