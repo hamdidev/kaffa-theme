@@ -231,13 +231,9 @@ header * {
   line-height: 1;
 }
 
-.navbar__items {
-  -webkit-transform: translateX(40%);
-          transform: translateX(40%);
-}
-
 .navbar__items ul {
-  margin-left: 830px;
+  -webkit-transform: translateX(45%);
+          transform: translateX(45%);
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -761,6 +757,7 @@ header * {
   margin: 0 auto;
   height: 95vh;
   max-width: 1780px;
+  width: 85vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1204,13 +1201,84 @@ header * {
 
 .prod {
   width: 100%;
-  margin-top: 303px;
+  margin-top: 250px;
 }
 
 .prod .prod-container {
   height: 50vh;
   margin: 0 auto;
-  background-color: blue;
   max-width: 1780px;
+}
+
+.prod .prod-container .product-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prod .prod-container .prod-list {
+  width: 25%;
+}
+
+.prod .prod-container .prod-list .prod-item {
+  padding: 0 50px;
+}
+
+.prod .prod-container .prod-list .prod-item .prod-desc {
+  text-align: center;
+  font-family: var(--poppins);
+  font-size: 1rem;
+  color: black;
+  margin-top: 25px;
+}
+
+.prod .prod-container .prod-list .prod-item .prod-desc .price {
+  font-family: var(--poppins);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--main-green);
+}
+
+.prod .btn-wrap img {
+  max-width: 100%;
+  width: 325px !important;
+  height: auto;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  margin: 0 auto 0 !important;
+  border-radius: 0px;
+  background-clip: border-box;
+}
+
+.footer {
+  background-image: url(/img/footer-bg.jpg);
+  background-size: cover;
+  width: 100%;
+  margin-top: 100px;
+  height: 35vh;
+  color: var(--white);
+  padding: 0 0 0 0;
+  padding-bottom: 0px;
+  position: relative;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+.footer .footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.footer .footer-container .row-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
