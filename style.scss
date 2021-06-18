@@ -26,6 +26,7 @@ body {
 html,
 body {
   line-height: 1.6;
+  overflow-x: hidden;
 }
 html {
   font-size: 10px;
@@ -189,6 +190,7 @@ header * {
   }
 }
 .navbar__items {
+  transform: translateX(40%);
 }
 .navbar__items ul {
   margin-left: 830px;
@@ -261,6 +263,7 @@ header * {
   background-color: white;
   margin: 0 auto;
   max-width: var(--mx);
+  padding: 0 50px;
 }
 .hero-row {
   width: 100%;
@@ -474,6 +477,7 @@ header * {
   margin: 0 auto;
   min-width: 600px;
   margin-top: 75px;
+  padding: 0 50px;
 }
 .image-wrapper {
   border-radius: 50%;
@@ -629,7 +633,7 @@ header * {
   .coffee__container {
     margin: 0 auto;
     height: 95vh;
-    width: 1780px;
+    max-width: 1780px;
     //background-color: yellow;
     // max-width: 1850px;
     // padding: 0 auto;
@@ -743,7 +747,7 @@ header * {
   .video-container {
     margin: 0 auto;
     height: 90vh;
-    width: 1780px;
+    max-width: 1780px;
     .video-wrapper {
       display: flex;
       flex-direction: column;
@@ -790,7 +794,7 @@ header * {
     height: 400px;
     margin: 0 auto;
     //height: 90vh;
-    width: 1780px;
+    max-width: 1780px;
     .number-wrapper {
       display: flex;
       flex-direction: column;
@@ -802,6 +806,7 @@ header * {
         width: 100%;
       }
       .number-figs {
+        padding: 0 100px;
         height: 150px;
         // background-color: blue;
         margin-top: 60px;
@@ -848,7 +853,7 @@ header * {
     height: 95vh;
     margin: 0 auto;
     // background-color: blue;
-    width: 1780px;
+    max-width: 1780px;
     .store-wrapper {
       display: flex;
       flex-direction: column;
@@ -893,7 +898,7 @@ header * {
         // padding-bottom: 30px;
         img {
           max-width: 100%;
-          width: auto !important;
+          width: 500px !important;
           height: auto;
           transition: all 1s ease;
           margin: 0 auto 0 !important;
@@ -998,12 +1003,12 @@ header * {
 
 .prod {
   width: 100%;
-  margin-top: 200px;
+  margin-top: 303px;
   .prod-container {
     height: 50vh;
     margin: 0 auto;
     background-color: blue;
-    width: 1780px;
+    max-width: 1780px;
   }
 }
 
