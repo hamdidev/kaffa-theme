@@ -1575,4 +1575,35 @@ header * {
 .sub-form .terms a {
   color: white;
 }
+
+.circle-dashed-info:hover::after {
+  -webkit-animation: spin6 5s infinite linear;
+          animation: spin6 5s infinite linear;
+}
+
+@-webkit-keyframes spin6 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spin6 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
 /*# sourceMappingURL=style.css.map */

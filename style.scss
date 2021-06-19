@@ -1328,3 +1328,22 @@ header * {
     // cursor: pointer;
   }
 }
+
+// Animations
+
+.circle-dashed-info:hover {
+  &::after {
+    animation: spin6 5s infinite linear;
+  }
+}
+
+@keyframes spin6 {
+  from {
+    transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
