@@ -1577,8 +1577,8 @@ header * {
 }
 
 .circle-dashed-info:hover::after {
-  -webkit-animation: spin6 5s infinite linear;
-          animation: spin6 5s infinite linear;
+  -webkit-animation: spin6 15s infinite linear;
+          animation: spin6 15s infinite linear;
 }
 
 @-webkit-keyframes spin6 {
