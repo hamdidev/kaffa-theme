@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaffa Theme</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
     
@@ -32,38 +34,56 @@
                                             <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
                                             <li><a href="#"><i class="uil uil-youtube"></i></a></li>
                                         </ul>
+                                        
                                     </div>
                                 </div>
                             </div>
-                          
+                            
                             <!--  Logo -->
                             <div class="navbar__logo">
-                              <a href="index.html" class="logo">
-                                  <img src="./img/logo.png" alt="KAFFA LOGO">
-                              </a>
+                                <a href="index.html" class="logo">
+                                    <img src="./img/logo.png" alt="KAFFA LOGO">
+                                </a>
                             </div>
-            
+                            
                             <!-- Icons  -->
-                            <ul class="navbar__icons">
-                                <li> <a href=""><i class="uil uil-user"></i></a></li>
-                                <li><a href=""><i class="uil uil-shopping-bag"></i></a></li>
-                                <li><a href=""><i class="uil uil-search"></i></a></li>
-                            </ul>
-                                
-                                
+                            <div class="navbar__iconss" >
+                                <ul class="navbar__icons" >
+                                    <li> <a href=""><i class="uil uil-user"></i></a></li>
+                                    <li><a href=""><i class="uil uil-shopping-bag"></i></a></li>
+                                    <li><a href=""><i class="uil uil-search"></i></a></li>
+                                </ul>
+                            </div>
+                            
+                            
+                            
                             
                         </div>
-                        <div class="navbar__items">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contacts</a></li>
+                        <div class="navbar__items nav__menu" id="nav-menu">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#">Products</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
                             </ul>
+                            <i class="ri-close-line nav__close" id="nav-close"></i>
+                            
                         </div>
                             
-                                        
+
+                        <!-- <button type="button" class="lte-navbar-toggle collapsed" id="nav-toggle">
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button> -->
+
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class="ri-function-line"></i>
+                        </div>
+                              
+				
+			          
                              
 
                     </nav>
@@ -157,6 +177,7 @@
                     <h6 class="products__header">Morbi eu varius neque, a ultricies sem. Fusce vitae convallis mi. Etiam dictum arcu posuere mauris semper accumsan . Ut vel nibh a risus hendrerit efficitur. Integer ligula lacus, placerat et egestas vel, ultricies ac purus.</h6>
                 </div>
             </div>
+
             <div class="products__pics">
                 <div class="products__item">
                     <a href="#" class="pitem">
@@ -165,7 +186,7 @@
                             <span class="count-label">01</span>
                         </span>
                         <h6 class="lte-headers">Arabica Green</h6>
-                        <p class="lte-excerpt">Curabitur semper erat a lacus consequat, sit amet quam convallis.</p>
+                        <p class="lte-excerpt first">Curabitur semper erat a lacus consequat, sit amet quam convallis.</p>
                     </a>
                     <a href="#" class="pitem">
                         <span class="image-wrapper">
@@ -177,34 +198,40 @@
                         <h6 class="lte-headers">Arabica Roasted</h6>
                         <p class="lte-excerpt">Curabitur semper erat a lacus consequat, sit amet quam convallis.</p>
                     </a>
+                </div>
+
+                <div class="products__item second-part">
+
                     <a href="#" class="pitem">
                         <span class="image-wrapper">
                             <span class="lte-img" style="background-image: url(./img/rubusta.jpg)"></span>
                             <span class="count-label">03</span>
                         </span>
-
-
+    
+    
                         <h6 class="lte-headers">Robusta Roasted</h6>
-                        <p class="lte-excerpt">Curabitur semper erat a lacus consequat, sit amet quam convallis.</p>
+                        <p class="lte-excerpt first">Curabitur semper erat a lacus consequat, sit amet quam convallis.</p>
                     </a>
+    
                     <a href="#" class="pitem">
                         <span class="image-wrapper">
                             <span class="lte-img"style="background-image: url(./img/mixed-beans.jpg)"></span>
                             <span class="count-label">04</span>
                         </span>
-
+    
                             
                         <h6 class="lte-headers">Mixed Sorts</h6>
                         <p class="lte-excerpt">Curabitur semper erat a lacus consequat, sit amet quam convallis.</p>
                     </a>
                 </div>
+
             </div>
 
         </div>
     </section>
     <!-- Devine Aroma -->
     <section class="aroma">
-        <div class="aroma-container">
+        <div class="aroma-container containers">
             <div class="aroma-row">
                 <div class="aroma-img"></div>
                 <div class="aroma-text">
@@ -227,6 +254,7 @@
                     </div>
                 </div>
                 <div class="aroma-img-two"></div>
+            </div>
             </div>
 
         </div>
@@ -386,56 +414,67 @@
         </div>
     </section>
     <!-- Numbers Section -->
-    <section class="numbers">
+    <!-- <section class="numbers">
         <div class="numbers-container">
             <div class="number-wrapper">
                 <div class="numberspacer"></div>
-                <div class="number-figs">
-                   <div class="center-flex">
-                       <div class="countUp-item">
-                           <h2 class="count-heading">
-                               <span class="count-anim">26</span>
-                            </h2>
-                            <h6 class="subheader-count">
-                             Selected Varieties
-                            </h6>
+                <div class="number-figures">
+
+                    <div class="number-figs">
+                       <div class="center-flex">
+                           <div class="countUp-item">
+                               <h2 class="count-heading">
+                                   <span class="count-anim">26</span>
+                                </h2>
+                                <h6 class="subheader-count">
+                                 Selected Varieties
+                                </h6>
+                           </div>
                        </div>
-                   </div>
-                   <div class="center-flex">
-                       <div class="countUp-item">
-                           <h2 class="count-heading">
-                               <span class="count-anim">89</span>
-                            </h2>
-                            <h6 class="subheader-count">
-                                Hectares of Plantations
-                            </h6>
+                       <div class="center-flex">
+                           <div class="countUp-item">
+                               <h2 class="count-heading">
+                                   <span class="count-anim">89</span>
+                                </h2>
+                                <h6 class="subheader-count">
+                                    Hectares of Plantations
+                                </h6>
+                           </div>
                        </div>
-                   </div>
-                   <div class="center-flex">
-                       <div class="countUp-item">
-                           <h2 class="count-heading">
-                               <span class="count-anim">40</span>
-                            </h2>
-                            <h6 class="subheader-count">
-                                Coffee Pickers
-                            </h6>
+
+                    </div>
+
+                       <div class="number-figs">
+
+                           <div class="center-flex">
+                               <div class="countUp-item">
+                                   <h2 class="count-heading">
+                                       <span class="count-anim">40</span>
+                                    </h2>
+                                    <h6 class="subheader-count">
+                                        Coffee Pickers
+                                    </h6>
+                               </div>
+                           </div>
+                           <div class="center-flex">
+                               <div class="countUp-item">
+                                   <h2 class="count-heading">
+                                       <span class="count-anim">75</span>
+                                    </h2>
+                                    <h6 class="subheader-count">
+                                        Consumer Countries
+                                    </h6>
+                               </div>
+                           </div>
                        </div>
-                   </div>
-                   <div class="center-flex">
-                       <div class="countUp-item">
-                           <h2 class="count-heading">
-                               <span class="count-anim">75</span>
-                            </h2>
-                            <h6 class="subheader-count">
-                                Consumer Countries
-                            </h6>
-                       </div>
-                   </div>
                 </div>
-                <div class="numberspacer"></div>
+
+                
+
+                <div class="numberspacer down"></div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Online Store -->
     <section class="store">
         <div class="store-container">
@@ -578,7 +617,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="row-center">
-                <div class="footer-col">
+                <div class="footer-col col-logo">
                     <div class="footer-wrapper">
                         <div class="footer-logo">
                             <a href="">
@@ -601,7 +640,7 @@
                     </div>
                 </div>
 
-                <div class="footer-col">
+                <div class="footer-col col-info">
                     <div class="footer-wrapper">
                         <div class="contact-info">
                             <h3 class="fcon-header">
@@ -631,7 +670,7 @@
                     </div>
                 </div>
 
-                <div class="footer-col">
+                <div class="footer-col subs">
                     <div class="footer-wrapper">
                         <div class="contact-info">
                             <h3 class="fcon-header">
