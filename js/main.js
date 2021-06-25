@@ -72,3 +72,26 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2300,
+    // reset: true,
+})
+
+
+sr.reveal(`.coffee-inner,.hero__text`,{
+    origin: 'left',
+})
+
+sr.reveal(`.coffee-inner-2,.hero__pic `,{
+    origin: 'right',
+    interval: 100,
+})
+
+
+sr.reveal(`.products__item,.coffee-cup`,{
+    origin: 'bottom',
+    interval: 100,
+})
